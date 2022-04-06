@@ -3,6 +3,18 @@
     --background: rgba(155, 155, 155, .80);
     --clr-text: #5a5a5a;
     --ff-title: 'Roboto'
+    
+    --fs-xl: 5rem;
+    --fs-600: 1.5rem;
+    --fs-400: 1rem;
+}
+
+@media (min-width: 40em) {
+    :root {
+        --fs-xl: 7rem;
+        --fs-600: 2rem;
+        --fs-400: 1.125rem;
+    }
 }
 
 *, 
@@ -200,6 +212,7 @@ mark {
 
 .banner-text {
     color: white;
+    font-size: var(--fr-600);
     display: flex;
     position: relative;
     flex-direction: column;
@@ -209,8 +222,13 @@ mark {
 
 }
 
+section .h1 {
+    font-size: var(--fr-600);
+}
+
 section {
     margin-top: -5rem;
+    font-size: var(--far-400);
     background-color: lightgrey;
     padding: 5rem;
     width: min(90%, 70rem);
