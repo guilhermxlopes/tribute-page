@@ -54,6 +54,10 @@ ul a {
   justify-content: center;
   align-items: center;
 }
+.container h1 {
+  font-size: var(--fs-large);
+  text-shadow: 0 0 10rem black, 0 0 2rem black;
+}
 .container .line {
   width: 10rem;
   height: 1rem;
