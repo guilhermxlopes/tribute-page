@@ -1,7 +1,43 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body::before {
   background-image: url(./images/chester.jpg);
   background-repeat: no-repeat;
-  filter: grayscale(1);
+  filter: grayscale(100%);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-position: center;
+}
+
+ul {
+  list-style: none;
+  margin-top: 3rem;
+  margin-left: 0;
+  display: flex;
+  gap: 5rem;
+  align-itens: center;
+  justify-content: center;
+}
+
+.container .line {
+  width: 10rem;
+  height: 1rem;
+  background-color: blue;
 }
 
 /*# sourceMappingURL=styles.css.map */
