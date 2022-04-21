@@ -2,10 +2,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --fs-large: 4rem;
+  --fs-medium: 1rem;
+  --fs-small: 0.8rem;
+}
+
 body {
   margin: 0;
   padding: 0;
   color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 body::before {
@@ -25,15 +32,28 @@ body::before {
 }
 
 ul {
+  font-size: var(--fs-medium);
+  display: flex;
   list-style: none;
   margin-top: 3rem;
-  margin-left: 0;
-  display: flex;
+  padding: 0;
   gap: 5rem;
   align-itens: center;
   justify-content: center;
 }
+ul a {
+  text-decoration: none;
+  color: white;
+}
 
+.container {
+  margin-block: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
 .container .line {
   width: 10rem;
   height: 1rem;
