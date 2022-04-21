@@ -192,14 +192,19 @@ mark {
     padding: 0 0.2em 0 0.2em;
 }
 
-.banner-area {
+.banner-area::before {
     background-image: url(./images/chester.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(1);
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    margin-top: -10rem;
-    z-index: 1;
+    z-index: -1;
 }
 
 .banner-area .overlay {
