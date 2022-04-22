@@ -4,7 +4,7 @@
 
 :root {
   --fs-large: 4rem;
-  --fs-medium: 1rem;
+  --fs-medium: 2rem;
   --fs-small: 0.8rem;
 }
 
@@ -56,12 +56,17 @@ ul a {
 }
 .container h1 {
   font-size: var(--fs-large);
-  text-shadow: 0 0 10rem black, 0 0 2rem black;
+  text-shadow: 0 0 2em black, 0 0 6rem black;
+}
+.container p {
+  font-size: var(--fs-medium);
+  text-shadow: 0 0 2em black, 0 0 6rem black;
+  font-style: italic;
 }
 .container .line {
-  width: 90rem;
+  width: 40rem;
   height: 1rem;
-  background-color: blue;
+  background-color: #BBAF40;
 }
 
 /*# sourceMappingURL=styles.css.map */
