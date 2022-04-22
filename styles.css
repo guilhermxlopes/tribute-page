@@ -105,7 +105,7 @@ ul li:hover {
     transform: scale(1, 0);
     transition: transform 0.4s ease-in-out;
     transform-origin: top;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   nav a {
     opacity: 0;
@@ -133,7 +133,7 @@ ul li:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   .nav-switch-label span,
@@ -160,7 +160,7 @@ ul li:hover {
   }
 
   .container {
-    margin-top: -10rem;
+    margin-top: -11rem;
     padding-inline: 2rem;
   }
   .container h1 {
@@ -170,7 +170,7 @@ ul li:hover {
     font-size: 1.2rem;
   }
   .container .line {
-    margin-top: 7rem;
+    margin-top: 3rem;
     width: 45%;
   }
 }
