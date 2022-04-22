@@ -78,6 +78,10 @@ ul li:hover {
   margin-top: 12rem;
   font-size: var(--fs-large);
   text-shadow: 0 0 1em black, 0 0 4rem black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container p {
   font-size: var(--fs-medium);
@@ -160,11 +164,11 @@ ul li:hover {
   }
 
   .container {
-    margin-top: -12.5rem;
+    margin-top: -10.5rem;
     padding-inline: 2rem;
   }
   .container h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
   .container p {
     font-size: 1.2rem;
