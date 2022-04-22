@@ -18,7 +18,7 @@ body {
 }
 
 body::before {
-  background-image: url(./images/chester.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(./images/chester.jpg);
   background-repeat: no-repeat;
   filter: grayscale(100%);
   background-size: cover;
@@ -38,7 +38,6 @@ ul {
   display: flex;
   list-style: none;
   margin-top: 4rem;
-  text-shadow: 0 0 2rem black, 0 0 1rem black;
   padding: 0;
   gap: 5rem;
   align-itens: center;
@@ -80,10 +79,10 @@ ul li:hover {
   margin-top: -10rem;
 }
 .container .line {
-  margin-top: 1rem;
+  margin-top: 5rem;
   width: 30rem;
   height: 0.3rem;
-  background-color: var(--c-yellow);
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)), color-stop(25%, var(--c-yellow)), color-stop(75%, var(--c-yellow)));
 }
 
 /*# sourceMappingURL=styles.css.map */
