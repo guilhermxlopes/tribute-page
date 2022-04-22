@@ -2,15 +2,15 @@
     box-sizing: border-box
 
 :root 
-    --fs-large: 4rem
-    --fs-medium: 2rem
-    --fs-small: 0.8rem
+    --fs-large: 3.5rem
+    --fs-medium: 1.8rem
+    --fs-small: 1rem
 
 body 
     margin: 0
     padding: 0
     color: white
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Merriweather', sans-serif
 
 body::before 
     background-image: url(./images/chester.jpg)
@@ -28,7 +28,7 @@ body::before
     background-position: center
 
 ul 
-    font-size: var(--fs-medium)
+    font-size: var(--fs-small)
     display: flex
     list-style: none
     margin-top: 3rem
@@ -42,7 +42,7 @@ ul
         color: white
 
 .container 
-    margin-block: 10rem
+    margin-block: 7rem
     display: flex
     flex-direction: column
     gap: 10rem
@@ -50,15 +50,16 @@ ul
     align-items: center
 
     h1 
+        margin-top: 15rem
         font-size: var(--fs-large)
-        text-shadow: 0 0 2em black, 0 0 6rem black
+        text-shadow: 0 0 1em black, 0 0 4rem black
 
     p 
         font-size: var(--fs-medium)
-        text-shadow: 0 0 2em black, 0 0 6rem black
+        text-shadow: 0 0 1em black, 0 0 4rem black
         font-style: italic
-
-
+        font-weight: lighter
+        margin-top: -10rem
     
     .line 
         width: 40rem
