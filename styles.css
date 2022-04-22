@@ -85,4 +85,18 @@ ul li:hover {
   background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)), color-stop(35%, var(--c-yellow)), color-stop(65%, var(--c-yellow)));
 }
 
+@media screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  ul {
+    display: block;
+  }
+
+  .nav-switch:checked ~ nav {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
