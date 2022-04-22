@@ -102,7 +102,7 @@ ul li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.2rem;
   }
 
   nav {
@@ -164,7 +164,7 @@ ul li:hover {
   }
 
   .container {
-    margin-top: -10.5rem;
+    margin-top: -11.5rem;
     padding-inline: 2rem;
   }
   .container h1 {
