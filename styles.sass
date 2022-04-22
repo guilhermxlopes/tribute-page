@@ -93,15 +93,38 @@ ul
     
     nav 
         display: none
-    
-    header input 
-        display: block
 
     header span
         display: block
 
     .nav-switch:checked ~ nav
         display: block
+
+    .nav-switch-label 
+        position: absolute
+        top: 3rem
+        margin-left: 1em
+    
+    .nav-switch-label span,
+    .nav-switch-label span::before,
+    .nav-switch-label span::after 
+        display: block
+        background: white
+        height: 2px
+        width: 2em
+
+    .nav-switch-label span::before,
+    .nav-switch-label span::after
+        content: ''
+        position: absolute
+
+    .nav-switch-label span::before
+        bottom: 9px
+
+    .nav-switch-label span::after
+        top: 9px
+
+    
 
        
 
