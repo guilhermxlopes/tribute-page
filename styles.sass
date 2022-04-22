@@ -30,6 +30,12 @@ body::before
     right: 0
     background-position: center
 
+header input
+    display: none
+
+header span
+    display: none
+
 ul 
     font-size: var(--fs-small)
     display: flex
@@ -82,14 +88,23 @@ ul
         background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)), color-stop(35%, var(--c-yellow)), color-stop(65%, var(--c-yellow)))
 
 @media screen and (max-width: 800px)
-    nav
+    ul
+       display: block
+    
+    nav 
         display: none
     
-    ul 
+    header input 
+        display: block
+
+    header span
         display: block
 
     .nav-switch:checked ~ nav
         display: block
+
+       
+
 
 
    
