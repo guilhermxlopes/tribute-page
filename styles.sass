@@ -89,18 +89,25 @@ ul
 
 @media screen and (max-width: 800px)
     ul
-       display: block
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 1rem
     
     nav 
         transform: scale(1, 0)
         transition: transform 0.4s ease-in-out
         transform-origin: top
+        margin-top: 3rem
         a
             opacity: 0
             transition: opacity 0.2s ease-in-out
 
-    header span
-        display: block
+    header 
+        display: flex
+        justify-content: center
+        span
+            display: block
 
     .nav-switch
         &:checked ~ nav
@@ -112,8 +119,10 @@ ul
 
     .nav-switch-label 
         position: absolute
-        top: 3rem
-        margin-left: 1em
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 5rem
     
     .nav-switch-label span,
     .nav-switch-label span::before,
@@ -133,6 +142,16 @@ ul
 
     .nav-switch-label span::after
         top: 9px
+
+    //finished navbar mobile
+
+    .container 
+        margin-top: -10rem
+        padding-inline: 2rem
+
+        .line
+            margin-top: -4rem
+            width: 45%
 
     
 
