@@ -163,8 +163,14 @@ ul li:hover {
     margin-top: -10rem;
     padding-inline: 2rem;
   }
+  .container h1 {
+    font-size: 2.8rem;
+  }
+  .container p {
+    font-size: 1.2rem;
+  }
   .container .line {
-    margin-top: -4rem;
+    margin-top: 7rem;
     width: 45%;
   }
 }
