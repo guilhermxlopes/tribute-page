@@ -99,7 +99,13 @@ ul li:hover {
   }
 
   nav {
-    display: none;
+    transform: scale(1, 0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: top;
+  }
+  nav a {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
   }
 
   header span {
@@ -107,7 +113,11 @@ ul li:hover {
   }
 
   .nav-switch:checked ~ nav {
-    display: block;
+    transform: scale(1, 1);
+  }
+  .nav-switch:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 250ms;
   }
 
   .nav-switch-label {

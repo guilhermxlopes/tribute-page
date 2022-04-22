@@ -92,13 +92,23 @@ ul
        display: block
     
     nav 
-        display: none
+        transform: scale(1, 0)
+        transition: transform 0.4s ease-in-out
+        transform-origin: top
+        a
+            opacity: 0
+            transition: opacity 0.2s ease-in-out
 
     header span
         display: block
 
-    .nav-switch:checked ~ nav
-        display: block
+    .nav-switch
+        &:checked ~ nav
+            transform: scale(1, 1)
+
+        &:checked ~ nav a 
+            opacity: 1
+            transition: opacity 0.3s ease-in-out 250ms
 
     .nav-switch-label 
         position: absolute
