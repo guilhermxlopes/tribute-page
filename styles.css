@@ -6,6 +6,8 @@
   --fs-large: 3.5rem;
   --fs-medium: 1.8rem;
   --fs-small: 1rem;
+  --c-yellow: #BBAF40;
+  --c-yellowf: #bbaf408c;
 }
 
 body {
@@ -35,15 +37,26 @@ ul {
   font-size: var(--fs-small);
   display: flex;
   list-style: none;
-  margin-top: 3rem;
+  margin-top: 4rem;
+  text-shadow: 0 0 2rem black, 0 0 1rem black;
   padding: 0;
   gap: 5rem;
   align-itens: center;
   justify-content: center;
 }
 ul a {
+  font-weight: 400;
   text-decoration: none;
   color: white;
+}
+ul li {
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+ul li:hover {
+  background-color: var(--c-yellowf);
+  cursor: pointer;
 }
 
 .container {
@@ -67,9 +80,10 @@ ul a {
   margin-top: -10rem;
 }
 .container .line {
-  width: 40rem;
-  height: 1rem;
-  background-color: #BBAF40;
+  margin-top: 3rem;
+  width: 30rem;
+  height: 0.3rem;
+  background-color: var(--c-yellow);
 }
 
 /*# sourceMappingURL=styles.css.map */
