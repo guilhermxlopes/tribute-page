@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -6,7 +8,7 @@
   --fs-large: 3.5rem;
   --fs-medium: 1.8rem;
   --fs-small: 1rem;
-  --c-yellow: #BBAF40;
+  --c-yellow: #bbaf40;
   --c-yellowf: #bbaf408c;
 }
 
@@ -18,7 +20,12 @@ body {
 }
 
 body::before {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(./images/chester.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(255, 255, 255, 0)
+    ),
+    url(./images/chester.jpg);
   background-repeat: no-repeat;
   filter: grayscale(100%);
   background-size: cover;
@@ -82,20 +89,20 @@ ul li:hover {
   margin-top: 5rem;
   width: 30rem;
   height: 0.3rem;
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)), color-stop(35%, var(--c-yellow)), color-stop(65%, var(--c-yellow)));
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    100% 0,
+    from(rgba(0, 0, 0, 0.1)),
+    to(rgba(0, 0, 0, 0.1)),
+    color-stop(35%, var(--c-yellow)),
+    color-stop(65%, var(--c-yellow))
+  );
 }
 
 @media screen and (max-width: 800px) {
-  nav {
+  .nav-switch {
     display: none;
-  }
-
-  ul {
-    display: block;
-  }
-
-  .nav-switch:checked ~ nav {
-    display: block;
   }
 }
 
