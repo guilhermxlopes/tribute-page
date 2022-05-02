@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -6,7 +8,7 @@
   --fs-large: 3.5rem;
   --fs-medium: 1.8rem;
   --fs-small: 1rem;
-  --c-yellow: #BBAF40;
+  --c-yellow: #bbaf40;
   --c-yellowf: #bbaf408c;
 }
 
@@ -18,7 +20,12 @@ body {
 }
 
 body::before {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(./images/chester.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(255, 255, 255, 0)
+    ),
+    url(./images/chester.jpg);
   background-repeat: no-repeat;
   filter: grayscale(100%);
   background-size: cover;
@@ -31,6 +38,19 @@ body::before {
   left: 0;
   right: 0;
   background-position: center;
+}
+
+header {
+  animation: navload 400ms ease-in-out;
+}
+
+@keyframes navload {
+  100% {
+    transform: translateY(-1000%);
+  }
+  0% {
+    transform: translateY(0%);
+  }
 }
 
 header input {
@@ -94,11 +114,27 @@ ul li:hover {
   margin-top: 5rem;
   width: 30rem;
   height: 0.3rem;
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)), color-stop(35%, var(--c-yellow)), color-stop(65%, var(--c-yellow)));
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    100% 0,
+    from(rgba(0, 0, 0, 0.1)),
+    to(rgba(0, 0, 0, 0.1)),
+    color-stop(35%, var(--c-yellow)),
+    color-stop(65%, var(--c-yellow))
+  );
   transition: background 0.9s ease-in-out;
 }
 .container .line:hover {
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)), color-stop(35%, lightgrey), color-stop(65%, lightgrey));
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    100% 0,
+    from(rgba(0, 0, 0, 0.1)),
+    to(rgba(0, 0, 0, 0.1)),
+    color-stop(35%, lightgrey),
+    color-stop(65%, lightgrey)
+  );
 }
 
 @media screen and (max-width: 800px) {
@@ -145,8 +181,8 @@ ul li:hover {
   }
 
   .nav-switch-label span,
-.nav-switch-label span::before,
-.nav-switch-label span::after {
+  .nav-switch-label span::before,
+  .nav-switch-label span::after {
     display: block;
     background: white;
     height: 2px;
@@ -154,7 +190,7 @@ ul li:hover {
   }
 
   .nav-switch-label span::before,
-.nav-switch-label span::after {
+  .nav-switch-label span::after {
     content: "";
     position: absolute;
   }
