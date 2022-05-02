@@ -45,10 +45,10 @@ header {
 }
 
 @keyframes navload {
-  100% {
+  0 {
     transform: translateY(-1000%);
   }
-  0% {
+  100% {
     transform: translateY(0%);
   }
 }
