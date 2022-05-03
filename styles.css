@@ -33,16 +33,16 @@ body::before {
   background-position: center;
 }
 
-@keyframes header {
+@keyframes faded {
   0% {
-    transform: translateY(0%);
+    opacity: 0;
   }
   100% {
-    transform: translateY(100%);
+    opacity: 100;
   }
 }
 header {
-  animation: header 4s ease-in-out;
+  animation: faded 1.5s ease-in-out;
 }
 header input {
   display: none;
@@ -85,6 +85,7 @@ ul li:hover {
   align-items: center;
 }
 .container h1 {
+  animation: faded 1.5s ease-in-out 500ms;
   margin-top: 12rem;
   font-size: var(--fs-large);
   text-shadow: 0 0 1em black, 0 0 4rem black;
@@ -94,6 +95,7 @@ ul li:hover {
   justify-content: center;
 }
 .container p {
+  animation: faded 1.5s ease-in-out 750ms;
   font-size: var(--fs-medium);
   text-shadow: 0 0 1em black, 0 0 4rem black;
   font-style: italic;
@@ -101,6 +103,7 @@ ul li:hover {
   margin-top: -10rem;
 }
 .container .line {
+  animation: faded 1.5s ease-in-out 1s;
   margin-top: 5rem;
   width: 30rem;
   height: 0.3rem;
