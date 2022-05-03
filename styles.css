@@ -35,10 +35,10 @@ body::before {
 
 @keyframes header {
   0% {
-    transform: translateY(0deg);
+    transform: translateY(0%);
   }
   100% {
-    transform: translateY(90deg);
+    transform: translateY(100%);
   }
 }
 header {
