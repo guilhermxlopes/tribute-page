@@ -30,11 +30,20 @@ body::before
     right: 0
     background-position: center
 
-header input
-    display: none
+@keyframes header 
+    0% 
+        transform: translateY(0deg)
+    100%
+        transform: translateY(90deg)
 
-header span
-    display: none
+
+header 
+    animation: header 4s ease-in-out
+    input
+        display: none
+    span
+        display: none
+        
 
 ul 
     font-size: var(--fs-small)
